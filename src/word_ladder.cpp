@@ -48,7 +48,7 @@ void WordLadder::outputLadder(const string &start, const string &end, const stri
 
   // check if the file to output is open 
   if( !ouFS.is_open() ) {
-    cout << "Could not open output file" ;
+    cout << "Could not open output file." << endl;
     exit(1); 
   }
   

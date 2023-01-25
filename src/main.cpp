@@ -3,6 +3,12 @@
 
 int main() {
   string dictFile = "dict";
+  
+  const char* remove_existing_directory = "rm -rf output_files";
+  const char* create_directory = "mkdir output_files"; 
+  system(remove_existing_directory);
+  system(create_directory);
+
   string outFile  = "./output_files/output.txt";
   string wordBegin, wordEnd;
 
